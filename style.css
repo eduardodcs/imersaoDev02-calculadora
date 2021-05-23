@@ -9,9 +9,10 @@ background-repeat: no-repeat;
 }
 
 .container {
-text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 padding: 20px;
-height: 100vh;
 }
 
 .page-title {
@@ -29,22 +30,49 @@ width: 200px;
 }
 
 .calculadora {
-width: 264px;
-height:360px;
-background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-calc.png');
-margin: 0 auto;
-position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    height: 40rem;
+    margin: 2rem;
+    border: 2px solid #ffffff;
+    padding: 3rem;
 }
 
-h2 {
-position: absolute;
-font-size:16px;
-font-weight:bold;
-top: 142px;
-left: calc(50% - 72.5px);
-width: 145px;
-text-align:center;
+.calculadora_visor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    
 }
+
+.calculadora_visor > p {
+    width: 100%;
+    font-size: 3rem;
+    text-align: right;
+    margin: 0 1rem;
+}
+
+.calculadora_div-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.calculadora_div-botoes button {
+    width: 20%;
+    height: 20%;
+    margin: .5rem;
+    font-size: 3rem;
+}
+
 
 .alura-logo {
 width: 40px;

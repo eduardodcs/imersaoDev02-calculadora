@@ -15,12 +15,33 @@
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
             alt="">
         <div class="calculadora">
+            <div class="calculadora_visor" id="calculadora_visor">
+            </div>
+            <div id="botoes" class="calculadora_div-botoes">
+                <button id="7" onclick="main(this.id)">7</button>
+                <button id="8" onclick="main(this.id)">8</button>
+                <button id="9" onclick="main(this.id)">9</button>
+                <button id="+" onclick="main(this.id)">+</button>
+                <button id="4" onclick="main(this.id)">4</button>
+                <button id="5" onclick="main(this.id)">5</button>
+                <button id="6" onclick="main(this.id)">6</button>
+                <button id="-" onclick="main(this.id)">-</button>
+                <button id="1" onclick="main(this.id)">1</button>
+                <button id="2" onclick="main(this.id)">2</button>
+                <button id="3" onclick="main(this.id)">3</button>
+                <button id="x" onclick="main(this.id)">x</button>
+                <button id="=" onclick="main(this.id)">=</button>
+                <button id="0" onclick="main(this.id)">0</button>
+                <button onclick="zerarValores()">C</button>
+                <button id="/" onclick="main(this.id)">/</button>
+            </div>
+
+
         </div>
     </div>
     <a href="https://alura.com.br/" target="_blank">
         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
     </a>
-    <h2></h2>
 </body>
-<script type="text/javascript" src="scritp.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </html>
