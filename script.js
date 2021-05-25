@@ -28,7 +28,6 @@ function main(e) {
         valor2 = parseInt(valorTemp)
         calcular()
         exibirResultado()
-        valorTexto = valorResultado
       }
     }
 
